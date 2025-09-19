@@ -13,21 +13,17 @@ if opcion == 1 or opcion == 2:
     valor1 = int(input("Ingrese el primer valor (0-1): "))
     valor2 = int(input("Ingrese el segundo valor (0-1): "))
     if opcion == 1:
-        if valor1 == 1 and valor2 == 1:
-            print(f"La salida de {valor1} y {valor2} es: 1")
-        else:
-            print(f"La salida de {valor1} y {valor2} es: 0")
+        resultado = valor1 and valor2
+        print(f"La salida de {valor1} y {valor2} es: {int(resultado)}")
+
     elif opcion == 2:
-        if valor1 == 0 and valor2 == 0:
-            print(f"La salida de {valor1} o {valor2} es: 0")
-        else:
-            print(f"La salida de {valor1} o {valor2} es: 1")
-    else:
-        valor = int(input("Ingrese un valor: "))
-        if valor == 0:
-            print(f"La salida de {valor} es 1")
-        else:
-            print(f"La salida de {valor} es 0")
+        resultado = valor1 or valor2
+        print(f"La salida de {valor1} y {valor2} es: {int(resultado)}")
+elif opcion == 3:
+    valor = int(input("Ingrese un valor: "))
+    resultado = not valor
+    print(f"La salida de NOT {valor} es: {int(resultado)}")
+
 
 
 
