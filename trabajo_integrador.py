@@ -17,9 +17,17 @@ if opcion == 1 or opcion == 2:
             print(f"La salida de {valor1} y {valor2} es: 1")
         else:
             print(f"La salida de {valor1} y {valor2} es: 0")
-
-
-
+    elif opcion == 2:
+        if valor1 == 0 and valor2 == 0:
+            print(f"La salida de {valor1} o {valor2} es: 0")
+        else:
+            print(f"La salida de {valor1} o {valor2} es: 1")
+    else:
+        valor = int(input("Ingrese un valor: "))
+        if valor == 0:
+            print(f"La salida de {valor} es 1")
+        else:
+            print(f"La salida de {valor} es 0")
 
 
 
